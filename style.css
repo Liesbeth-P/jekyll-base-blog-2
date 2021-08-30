@@ -102,6 +102,7 @@ section { position: relative; }
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
+.bg-featured-light { background-color: var(--featured-light); }
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
@@ -119,6 +120,20 @@ section { position: relative; }
 .bg-image-desk {
   background-image: url('/images/image-2-desk.jpg');
 }
+
+.bg-image-design {
+  background-image: url('/images/image-3-design.jpg');
+}
+
+.bg-image-dev {
+  background-image: url('/images/image-4-dev.jpg');
+}
+
+.bg-image-seo {
+  background-image: url('/images/image-5-seo.jpg');
+}
+
+
 
 .bg-overlay::after {
   z-index: 1;
@@ -348,6 +363,11 @@ nav a:hover {
   }
 
 
+/*------------ Footer  ------------*/
+footer .menu-nav a {
+  display: block;
+  text-align: left;
+}
 
 /* ------------ Contact Forms  ----------------------- */
 form input,
@@ -361,8 +381,12 @@ form textarea {
   outline: none;
 }
 
-textarea {
+form textarea {
+  resize: vertical;
+  margin: auto;
+  display: block;
   min-height: 5rem;
+  margin-bottom: 2rem;
 }
 
 form input:focus,
@@ -371,7 +395,7 @@ form textarea:focus {
 }
 
 form button {
-  background-color: #FFD0C0;
+  background-color: var(--accent);
   color: white;
   text-transform: uppercase;
   padding: 0.5rem 2rem;
@@ -393,7 +417,7 @@ form button {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 .card.featured {
-  border: 2px solid orange;
+  border: 3px solid var(--accent);
 }
 
 .price {
