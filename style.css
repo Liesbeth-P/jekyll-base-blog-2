@@ -190,7 +190,9 @@ a.bg-image { display: block;}
 .italic   { font-style: italic; }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Add your font here */ 
+  font-family: 'Josefin Sans', sans-serif;
+  /* 'Martel', serif;  */
+  /* 'Roboto', sans-serif; Add your font here  */
   color: var(--medium-text);
 }
 
@@ -237,7 +239,8 @@ p:last-child {
 
 /* ------------ Buttons & Links ------------ */
 a {
-    color: inherit;
+  font-family: 'Martel', serif;
+  color: inherit;
 }
 
 a:hover {
@@ -286,7 +289,7 @@ nav a {
     display: inline-block;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--dark-text);
 }
     
@@ -345,7 +348,7 @@ nav a:hover {
     line-height: 0.8;
     position: fixed;
     right: 3%;
-    top: 1rem;
+    top: 1.5rem;
     z-index: 4;
   }
   
@@ -379,9 +382,20 @@ nav a:hover {
 
 /*------------ Footer  ------------*/
 footer .menu-nav a {
-  display: block;
-  text-align: left;
+  display: inline-block;
+  text-align: center;
 }
+
+footer .fab {
+  font-size: 2.5rem;
+  color: white;
+}
+
+footer .fab:hover {
+  color: var(--featured-text);
+}
+
+
 
 /* ------------ Contact Forms  ----------------------- */
 form input,
@@ -390,7 +404,7 @@ form textarea {
   padding: 0.5rem;
   margin: 0.5rem 0;
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border: none;
   outline: none;
 }
@@ -399,7 +413,7 @@ form textarea {
   resize: vertical;
   margin: auto;
   display: block;
-  min-height: 5rem;
+  min-height: 8rem;
   margin-bottom: 2rem;
 }
 
@@ -408,10 +422,11 @@ form textarea:focus {
   border-color: #444444;
 }
 
-form button {
+form .button {
   background-color: var(--accent);
   color: white;
   text-transform: uppercase;
+  font-weight: 600;
   padding: 0.5rem 2rem;
   margin: 0.5rem 0;
   border: none;
