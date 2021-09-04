@@ -104,6 +104,7 @@ section { position: relative; }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 .bg-featured-light { background-color: var(--featured-light); }
+.bg-accent   { background-color: var(--accent); }
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
