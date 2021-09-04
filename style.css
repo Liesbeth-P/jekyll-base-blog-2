@@ -135,7 +135,23 @@ section { position: relative; }
   background-image: url('/images/image-5-seo.jpg');
 }
 
+.bg-image-home {
+  background-image: url('/images/image-6-home.jpg');
+}
 
+.bg-image-woman {
+  background-image: url('/images/image-7-woman.jpg');
+}
+
+.bg-image-present {
+  background-image: url('/images/image-8-present.jpg');
+  background-position: top;
+}
+
+.shape-window {
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem; 
+}
 
 .bg-overlay::after {
   z-index: 1;
@@ -434,6 +450,84 @@ form .button {
   border-radius: 10px;
   letter-spacing: 0.1em;
   display: inline-block;
+}
+
+
+/*----- Testimonial Slider -----*/
+.author {
+  font-size: 0.9rem;
+  color: rgb(90, 90, 90);
+  margin-top: 0.5rem;
+  font-style: italic;
+  text-align: right;
+}
+
+.quote-icon {
+font-size: 4rem;
+color: rgb(200,200,200);
+}
+
+/* Slider */
+.testimonial-slider-container {
+padding: 5%;
+max-width: 900px;
+margin: auto;
+/*   border: 2px solid lightblue; */
+}
+
+.slider-item {
+padding: 0.25rem;
+/*   border: 2px solid orange; */
+display: none
+}
+
+.slider-item:first-child {
+display: block;
+}
+
+.slick-next {
+right: 10px;
+}
+
+.slick-prev {
+left: 10px;
+}
+.slick-next::before, .slick-prev::before {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: rgb(90,90,90);
+}
+
+.slick-dots {
+   bottom: 10px;
+   left: 0; /* This align the dots perfectly to the center, do not delete. Without this the padding on the parent affects the centering of the dots*/
+}
+
+.slick-dots li,
+.slick-dots li button {
+   width: 10px;
+}
+
+.slick-dots li button::before {
+   font-size: 12px;
+   color: rgb(0, 128, 128);
+}
+
+.slick-dots li.slick-active button::before {
+   color: rgb(0, 128, 128);
+}
+
+/* Slider Text Files */
+.slider-item p {
+text-align: justify;
+font-family: 'Playfair display';
+font-size: 1.5rem;
+}
+
+@media(max-width: 36em){
+.slider-item p {font-size: 1.1rem;}
 }
 
 

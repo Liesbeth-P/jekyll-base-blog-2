@@ -7,8 +7,8 @@ description: >-
 author: Lucy
 featured: true
 categories:
-  - self care
-  - food
+  - webdesign
+  - lifestyle
 featured_image: https://source.unsplash.com/random?sig=10
 seo:
   title:
