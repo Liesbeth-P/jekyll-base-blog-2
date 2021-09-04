@@ -141,6 +141,7 @@ section { position: relative; }
 
 .bg-image-woman {
   background-image: url('/images/image-7-woman.jpg');
+  background-position: 85%;
 }
 
 .bg-image-present {
@@ -526,11 +527,6 @@ font-family: 'Playfair display';
 font-size: 1.5rem;
 }
 
-@media(max-width: 36em){
-.slider-item p {font-size: 1.1rem;}
-}
-
-
 /* ------------ Pricing ----------------------- */
 .no-bullets { list-style:none; }
 /* Used to remove dot-points from a list */
@@ -703,6 +699,17 @@ hr.short.center {
   .sm-portrait-tall { padding-bottom: 175%; }
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
+
+  .slider-item p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  p { font-size: 1.2rem; }
+
+  footer .menu-nav a {
+    display: block;
+  }
 
 }
 
