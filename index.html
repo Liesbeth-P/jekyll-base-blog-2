@@ -14,17 +14,17 @@ seo:
 <section class="bg-image bg-image-home padded grid bg-overlay tall-90">
     <!-- Change bg-image!! -->
     <div class="col-12-top center text-light">
-        <h1> Liesbeth Peeters </h1>
+        <h1 class="padded-t"> Liesbeth Peeters </h1>
         <p class="emphasis"> Web Design & Web Development Services </p>
     </div>
 </section>
 
 <!------------ About Me Section ------------>
 <section class="grid padded bg-featured">
-    <div class="col-5 bg-image bg-image-woman tall-60">
+    <div class="col-5_sm-12 bg-image bg-image-woman tall-60">
         <!-- Add image of myself here!! -->
     </div>
-    <div class="col-7-middle padded">
+    <div class="col-7_sm-12-middle padded">
         <h2> ABOUT ME </h2>
         <!-- Add handwriting font here -->
         <h3> Hi, I'm Liesbeth! </h3>
@@ -37,29 +37,30 @@ seo:
 
 <!------------ Services Section ----------->
 <section class="grid padded bg-featured-light">
-    <div class="col-4 grid-middle center padded">
-        <div class="col-12 bg-image bg-image-design shape-window tall-50 padded"></div>
-        <div class="col-12 padded bg-medium">
+    <h2 class="col-12 center padded-b"> My Services </h2>
+    <div class="col-4_sm-12 grid-middle padded center">
+        <div class="col-12 bg-image bg-image-design shape-window tall-40 padded"></div>
+        <div class="col-12 bg-medium padded">
             <h3> Web Design </h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi illo commodi dignissimos quisquam eum? Delectus saepe numquam doloremque libero vitae.</p>
-            <a href="/services.html"> Read More </a>
         </div>
     </div>
-    <div class="col-4 grid-middle center padded">
-        <div class="col-12 bg-image bg-image-dev shape-window tall-50 padded"></div>
-        <div class="col-12 padded bg-medium">
-            <h3> Web Development & SEO </h3>
+    <div class="col-4_sm-12 grid-middle padded center">
+        <div class="col-12 bg-image bg-image-dev shape-window tall-40 padded"></div>
+        <div class="col-12 bg-medium padded">
+            <h3> Web Dev & SEO </h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi illo commodi dignissimos quisquam eum? Delectus saepe numquam doloremque libero vitae.</p>
-            <a href="/services.html"> Read More </a>
         </div>
     </div>
-    <div class="col-4 grid-middle center padded">
-        <div class="col-12 bg-image bg-image-seo shape-window tall-50 padded"></div>
-        <div class="col-12 padded bg-medium">
+    <div class="col-4_sm-12 grid-middle padded center">
+        <div class="col-12 bg-image bg-image-seo shape-window tall-40 padded"></div>
+        <div class="col-12 bg-medium padded">
             <h3> Website Maintenance </h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi illo commodi dignissimos quisquam eum? Delectus saepe numquam doloremque libero vitae.</p>
-            <a href="/services.html"> Read More </a>
         </div>
+    </div>
+    <div class="col-12-middle center margin-t">
+      <a href="/services.html" class="button"> Read More </a>
     </div>
 </section>
 
@@ -68,7 +69,7 @@ seo:
 
 
 <!------------ Contact Banner ------------>
-<section class="bg-image bg-image-present padded grid-middle tall-60">
+<section class="bg-image bg-image-present padded grid-middle tall-50">
     <h2 class="col-12"> Let's Get In Touch! </h2> 
     <p class="col-12 emphasis"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, delectus sequi.</p>
     <!-- Add link + button style  -->
@@ -112,7 +113,7 @@ seo:
   </section> 
 
 <!------------------- Featured blog loop / What's New On The Blog Section ------------------->
-<section class="padded">
+<section class="padded bg-featured">
 
     <div class="capped-width grid-center">
 
@@ -125,7 +126,7 @@ seo:
 
         {% for post in featured_posts limit:3 %}
 
-            <div class="col-4 post-item padded-05">
+            <div class="col-4_sm-12 post-item padded-05">
                 <div class="bg-image portrait" style="background-image:url( '{{ post.featured_image }}' );"></div>
                 <div class="padded-t-1">
                     
@@ -135,7 +136,9 @@ seo:
 
                     <h2 class="margin-t-1"> {{ post.title }} </h2>
                     <p> {{ post.description }} </p>
-                    <a href="{{ post.url }}" class="subtle-button"> Read More </a>
+                    <div class="margin-b">
+                      <a href="{{ post.url }}" class="subtle-button"> Read More </a>
+                    </div>
 
                 </div>
             </div>
