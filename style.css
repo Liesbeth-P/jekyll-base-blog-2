@@ -211,7 +211,7 @@ a.bg-image { display: block;}
 body {
   font-family: 'Josefin Sans', sans-serif;
   /* 'Martel', serif;  */
-  /* 'Roboto', sans-serif; Add your font here  */
+  /* 'Roboto', sans-serif; */
   color: var(--medium-text);
 }
 
@@ -224,7 +224,6 @@ h1 { font-size: 4.5rem;}
 h2 { font-size: 2rem; }
 h3 { 
   font-size: 1.4rem; 
-  /* font-style: italic; */
   font-weight: 500;
 }
 h4 { font-size: 1.5rem; }
@@ -396,6 +395,7 @@ nav a:hover {
     padding: 2%;
     display: block;
     font-weight: normal;
+    font-size: 1.5rem;
   }
 
 
@@ -528,6 +528,7 @@ font-family: 'Playfair display';
 font-size: 1.5rem;
 }
 
+
 /* ------------ Pricing ----------------------- */
 .no-bullets { list-style:none; }
 /* Used to remove dot-points from a list */
@@ -559,8 +560,6 @@ font-size: 1.5rem;
 
 
 /* ------------ Blogging elements  ----------------------- */
-
-
 
 /* Post Loop Item  */
 
@@ -610,7 +609,7 @@ font-size: 1.5rem;
   color: var(--medium-text);
 }
 .sidebar-item p {
-  font-family: 'Mulish', serif; 
+  font-family: 'Martel', serif; 
   font-weight: 300;
 }
 
@@ -640,12 +639,6 @@ hr.short.center {
 
 
 /* ------------ Page Name  ----------------------- */
-
-
-
-
-
-
 
 
 
