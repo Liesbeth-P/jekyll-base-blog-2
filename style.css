@@ -716,6 +716,9 @@ hr.short.center {
     border-top-right-radius: 0; 
   }
 
+  .flex-flip-sm { flex-direction: column-reverse; }
+
+}
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
