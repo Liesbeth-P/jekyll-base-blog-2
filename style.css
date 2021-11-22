@@ -299,6 +299,8 @@ p a:hover {
 header {
     padding: 1rem 5%;
     background-color:  #F7EBE4;
+    position: fixed;
+    z-index:5;
 }
 
 nav a {
