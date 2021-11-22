@@ -299,8 +299,6 @@ p a:hover {
 header {
     padding: 1rem 5%;
     background-color:  #F7EBE4;
-    position: fixed;
-    z-index:5;
 }
 
 nav a {
@@ -366,7 +364,7 @@ nav a:hover {
     font-weight: 200;
     font-size: 2.5rem;
     line-height: 0.8;
-    position: fixed;
+    position: absolute;
     right: 3%;
     top: 1.5rem;
     z-index: 4;
@@ -528,6 +526,12 @@ left: 10px;
 text-align: justify;
 font-family: 'Playfair display';
 font-size: 1.5rem;
+}
+
+
+/* ------------ Services Section ----------------------- */
+.grid-middle.service {
+  padding: 2.5%;
 }
 
 
